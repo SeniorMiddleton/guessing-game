@@ -11,7 +11,7 @@ class GuessingGame {
   }
 
   guess() {
-    this.guessValue = Math.floor((this.min + this.max) / 2);
+    this.guessValue = Math.ceil((this.min + this.max) / 2);
     return this.guessValue;
   }
 
@@ -20,7 +20,7 @@ class GuessingGame {
 
     //   this.max--;
     // }
-    this.max = this.guessValue + 1;
+    this.max = this.guessValue;
   }
 
   greater() {
